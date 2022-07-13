@@ -1,21 +1,28 @@
-function Card(){
+import CardStyles from './Card.module.scss'
+
+
+
+function Index(props){
+    const onClickButton = () =>{
+        alert(props.title)
+    }
     return (
-        <div className="card">
+        <div className={CardStyles.card}>
             <div className="favorite">
                 <img src="/img/heart-unliked.svg" alt="Unliked"/>
             </div>
-            <img height="112px" width="133px" src="/img/1.jpg" alt="sneakers1"/>
-            <h5>Мужские Кроссовки Nike Blazer Mid Suede</h5>
+            <img height="112px" width="133px" src={props.imageURL} alt="sneakers1"/>
+            <h5>{props.title}</h5>
             <div className="d-flex justify-between mt-15 align-center">
                 <div className="price flex-column">
                     <p>Цена</p>
-                    <b>12 999 руб.</b>
+                    <b>{props.price} руб.</b>
                 </div>
-                <button>
+                <button onClick={() =>onClickButton()}>
                     <img src="/img/plus.svg" alt="plus"/>
                 </button>
             </div>
         </div>
     );
 }
-export default Card;
+export default Index;

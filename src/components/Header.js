@@ -1,3 +1,5 @@
+import Styles from './Header/Header.module.scss'
+
 function Header() {
     return (
         <header className="d-flex justify-between align-center">

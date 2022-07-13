@@ -54,62 +54,7 @@ header{
   .sneakers{
     display: flex;
   }
-  .card{
-    margin-right: 30px;
-    padding: 20px;
-    width: 210px;
-    background: #FFFFFF;
-    border: 1px solid #F3F3F3;
-    border-radius: 40px;
-    transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
-    &:hover{
-      box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.08);
-      transform: translateY(-5px);
-    }
-    .favorite{
-      position: absolute;
-      cursor: pointer;
-      width: 32px;
-      height: 32px;
-    }
 
-    .price{
-      p{
-        text-transform: uppercase;
-        font-size: 11px;
-        line-height: 13px;
-        text-transform: uppercase;
-        color: #BDBDBD;
-      }
-      b{
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 17px;
-        color: #000000;
-      }
-    }
-
-    p,b{
-      margin: 0;
-    }
-    h5{
-      font-weight: 400;
-      font-size: 14px;
-    }
-    button{
-      background: #FFFFFF;
-      border: 1px solid #F2F2F2;
-      box-sizing: border-box;
-      border-radius: 8px;
-      height: 32px;
-      width: 32px;
-      cursor: pointer;
-      img{
-        width: 15px;
-        height: 15px;
-      }
-    }
-  }
 }
 .overlay{
   position: absolute;
